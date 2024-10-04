@@ -1,0 +1,111 @@
+/* styles.css */
+
+/* general body styling */
+body {
+  background-color: black;
+  font-family: Courier, monospace;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.form-container {
+  z-index: 1; /* keeps the form content on top of the edge text */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.08vw; 
+  color: #39ff14; 
+  font-family: 'Arial', sans-serif; 
+  font-weight: 500; 
+  text-transform: uppercase; /* All caps */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* form labels */
+label {
+  font-size: .7vw; 
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  font-family: 'Arial', sans-serif; 
+  font-weight: 500;
+  text-transform: uppercase; 
+}
+
+/* form input & field boxes */
+input {
+  width: 400px; 
+  height: 40px; 
+  padding: 8px; 
+  margin-bottom: 15px; 
+  font-size: 1.8vw; 
+  font-weight: bold; 
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px; 
+  text-align: center;
+  font-family: 'Arial', sans-serif; 
+  text-transform: uppercase; 
+  overflow: hidden;
+}
+
+/* button styling */
+button {
+  font-family: 'Arial', sans-serif;
+  padding: 7px 18px; 
+  font-size: 0.9vw; 
+  background-color: #39ff14; 
+  color: black;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase; 
+  font-weight: bold; 
+}
+
+button:hover {
+  background-color: #ff14b8;
+}
+
+/* small legal text at bottom */
+.legal-text {
+  font-size: 0.7vw; 
+  color: gray;
+  margin-top: 90px; 
+  font-family: 'Arial', sans-serif;
+}
+
+.edge-text {
+  position: absolute;
+  white-space: nowrap;
+  font-family: Courier, monospace;
+  color: white;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  font-size: .8vw; 
+}
+
+.top-edge {
+  top: 0;
+}
+
+.bottom-edge {
+  bottom: 0;
+}
